@@ -1,0 +1,232 @@
+{
+  "id": "456e7890-e12b-34d5-f678-526614174001",
+  "type": "CredentialSchemaTemplate",
+  "displayName": "DVS Wohnsitzbestätigung V1.2",
+  "libraryKey": "dvs-vc-katalog",
+  "issuerSettings": {
+    "issuerKeyType": "HARDWARE_BIOMETRIC_AUTH",
+    "doctype": "dvs-wohnsitzbestaetigung-v1.2-mdl",
+    "namespace": "dvs-wohnsitzbestaetigung-v1.2-mdl",
+    "vct": "dvs-wohnsitzbestaetigung-v1.2-sdjwt"
+  },  
+  "attributes": [
+    {
+      "name": "Ausstelldatum",
+      "type": "DATE",
+      "displayName": {
+        "en": "Issue Date",
+        "de": "Ausstelldatum"
+      }
+    },
+    {
+      "name": "AusstellendeBehoerde",
+      "type": "STRING",
+      "displayName": {
+        "en": "Issuing Authority",
+        "de": "Ausstellende Behörde"
+      }
+    },
+    {
+      "name": "idAusstellendeBehoerde",
+      "type": "STRING",
+      "displayName": {
+        "en": "ID Issuing Authority",
+        "de": "ID Ausstellende Behörde"
+      }
+    },
+    {
+      "name": "Gemeindename",
+      "type": "STRING",
+      "displayName": {
+        "en": "Municipality Name",
+        "de": "Gemeindename"
+      }
+    },
+    {
+      "name": "Referenznummer",
+      "type": "NUMBER",
+      "displayName": {
+        "en": "Reference Number",
+        "de": "Referenznummer"
+      }
+    },
+    {
+      "name": "Name",
+      "type": "STRING",
+      "displayName": {
+        "en": "Last Name",
+        "de": "Name"
+      }
+    },
+    {
+      "name": "Vorname(n)",
+      "type": "STRING",
+      "displayName": {
+        "en": "First Name",
+        "de": "Vorname(n)"
+      }
+    },
+    {
+      "name": "Geburtsdatum",
+      "type": "DATE",
+      "displayName": {
+        "en": "Date of Birth",
+        "de": "Geburtsdatum"
+      }
+    },
+    {
+      "name": "Heimatort",
+      "type": "STRING",
+      "displayName": {
+        "en": "Place of Origin",
+        "de": "Heimatort"
+      }
+    },
+    {
+      "name": "Nationalitaet",
+      "type": "STRING",
+      "displayName": {
+        "en": "Nationality",
+        “de”: “Nationalität”
+     }
+   },
+   {
+      "name": "Strasse   ",
+      "type": "STRING",
+      "displayName": {
+        "en": "Strasse   ",
+        “de”: “Strasse   ”
+     }
+   },
+{
+      "name": "Hausnummer   ",
+      "type": "NUMBER",
+      "displayName": {
+        "en": "Hausnummer   ",
+        “de”: “Hausnummer   ”
+     }
+   },
+{
+      "name": "PLZ   ",
+      "type": "NUMBER",
+      "displayName": {
+        "en": "PLZ   ",
+        “de”: “PLZ   ”
+     }
+   },
+{
+      "name": "Ort",
+      "type": "STRING",
+      "displayName": {
+        "en": "Ort",
+        “de”: “Ort”
+     }
+   },
+{
+      "name": "EGID",
+      "type": "NUMBER",
+      "displayName": {
+        "en": "EGID",
+        “de”: “EGID”
+     }
+   },
+{
+      "name": "EWID",
+      "type": "NUMBER",
+      "displayName": {
+        "en": "EWID",
+        “de”: “EWID”
+     }
+   },
+{
+      "name": "Zuzugsdatum",
+      "type": "Date of Birth",
+      "displayName": {
+        "en": "Zuzugsdatum",
+        “de”: “Zuzugsdatum”
+     }
+   },
+{
+      "name": "Zuzugsort",
+      "type": "STRING",
+      "displayName": {
+        "en": "Zuzugsort",
+        “de”: “Zuzugsort”
+     }
+   },
+{
+      "name": "Wegzugsdatum",
+      "type": "Date of Birth",
+      "displayName": {
+        "en": "Wegzugsdatum",
+        “de”: “Wegzugsdatum”
+     }
+   },
+{
+      "name": "Wegzugsort",
+      "type": "STRING",
+      "displayName": {
+        "en": "Wegzugsort",
+        “de”: “Wegzugsort”
+     }
+   },
+{
+      "name": "Bemerkungen",
+      "type": "STRING",
+      "displayName": {
+        "en": "Bemerkungen",
+        “de”: “Bemerkungen”
+     }
+   },
+
+"attributeRules": {
+    "firstname": {
+      "description": "Vorname(n)",
+      "isDisplayNameEditable": true,
+      "isRequired": true,
+      "canBeEmpty": false
+    },
+    "lastname": {
+      "description": "Name",
+      "isDisplayNameEditable": true,
+      "isRequired": true,
+      "canBeEmpty": false
+    },
+    "dateOfBirth": {
+      "description": "User's date of birth",
+      "isDisplayNameEditable": false,
+      "isRequired": true,
+      "canBeEmpty": false
+    },
+    "street": {
+      "description": "Street address",
+      "isDisplayNameEditable": false,
+      "isRequired": false,
+      "canBeEmpty": true
+    },
+    "zip": {
+      "description": "Postal zip code",
+      "isDisplayNameEditable": false,
+      "isRequired": true,
+      "canBeEmpty": false
+    },
+    "place": {
+      "description": "Place of residence",
+      "isDisplayNameEditable": false,
+      "isRequired": true,
+      "canBeEmpty": false
+    },
+    "EGID": {
+      "description": "Gebäudenummer",
+      "isDisplayNameEditable": false,
+      "isRequired": false,
+      "canBeEmpty": false
+    },
+    "EWID": {
+      "description": "Wohnungsnummernummer",
+      "isDisplayNameEditable": false,
+      "isRequired": false,
+      "canBeEmpty": false
+    },
+
+  }
